@@ -6,11 +6,11 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mordi.test.Controller">
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mordi.test.Controller">
    <children>
       <Text layoutX="355.0" layoutY="165.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hello world" />
-      <Text layoutX="138.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="erlend er neger" wrappingWidth="240.37969970703125" />
-      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="115.0" layoutY="125.0" pickOnBounds="true" preserveRatio="true">
+      <Text layoutX="138.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="erlend er negazer" wrappingWidth="240.37969970703125" />
+      <ImageView fx:id="myImageView" fitHeight="150.0" fitWidth="200.0" layoutX="115.0" layoutY="125.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@monkey.jpg" />
          </image>

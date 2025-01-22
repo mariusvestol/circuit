@@ -3,9 +3,16 @@ package mordi.test;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 
 public class Controller {
+
+    // TEST IKKE BEHOLD
+    static Boolean bollemus = true;
+
+    Image imOn = new Image(getClass().getResource("/oving0/todolist/led_on.png").toExternalForm());
+    Image imOff = new Image(getClass().getResource("/oving0/todolist/led_off.png").toExternalForm());
 
     @FXML
     private AnchorPane anchorPane; // FXML-feltet for AnchorPane
@@ -43,5 +50,16 @@ public class Controller {
     private void fitte() {
         // Hva som skal skje når knappen trykkes
         System.out.println("Hello World");
+
+        if (bollemus) {
+
+            myImageView.setImage(imOn);
+            bollemus = false;
+        }
+
+        else {
+            myImageView.setImage(imOff);
+            bollemus = true;
+        }
     }
 }

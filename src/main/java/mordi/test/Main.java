@@ -12,7 +12,7 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception {
         // Last inn FXML-filen
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("test.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/oving0/todolist/test.fxml"));
         Parent root = loader.load();
 
         // Sett opp scenen
